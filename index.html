@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>API Github</title>
+</head>
+<body>
+    <h1>Bem vindo ao Github</h1>
+<h2>Digite o nome do usuário</h2>
+<input id="user" type="text">
+<button id="btn" onclick="getApi()">>Pesquisar</button>
+<hr>
+<h1 hidden>Informações do Usuário: </h1>
+<img hidden id="img" src="">
+    <h2><span hidden>URL do Perfil: </span><span id="profileUrl"></span></h2>
+    <h2><span hidden>Nome: </span><span id="name"></span></h2>
+    <h2><span hidden>Bio: </span><span id="bio"></span></h2>
+    <h2><span hidden>Repositórios: </span><span id="repos"></span></h2>
+    <h2><span hidden>Seguidores: </span><span id="followers"></span></h2>
+<container hidden>
+    <h2 hidden>Pesquisar Repositórios</h2>
+    <input hidden type="text" id="searchRepo" oninput="filterRepos()">
+    <ul id="repoList"></ul>
+</container>
+</body>
+</html>
+
